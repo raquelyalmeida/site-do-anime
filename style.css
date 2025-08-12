@@ -15,8 +15,8 @@ body {
 /* Cabeçalho decorado */
 header {
     background: linear-gradient(90deg, #3a007f, #b84cff, #ff00ff);
-    padding: 25px 0;
-    box-shadow: 0 4px 15px rgba(184, 76, 255, 0.7);
+    padding: 30px 0;
+    box-shadow: 0 4px 15px rgba(30, 3, 48, 0.7);
     text-align: center;
     position: relative;
     overflow: hidden;
