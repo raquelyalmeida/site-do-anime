@@ -1,4 +1,3 @@
-```css
 /* Reset básico */
 * {
     margin: 0;
@@ -9,49 +8,47 @@
 /* Estilo do corpo */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #ac0303;
-    color: #000000;
+    background-color: #1a0029; /* Roxo escuro */
+    color: #ffffff;
 }
 
 /* Estilo do título */
 h1 {
     text-align: center;
     font-size: 2.5em;
-    color: #ed0b3c; /* Azul */
+    color: #b84cff; /* Roxo vibrante */
     margin: 20px 0;
+    text-shadow: 0 0 10px #b84cff, 0 0 20px #ff00ff;
 }
 
-/* Estilo das imagens menores */
+/* Imagens pequenas */
 .image-small-container {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Espaçamento entre as imagens */
+    gap: 10px;
+    padding: 10px;
 }
 
-.image-small {
-    width: 100px; /* Ajuste conforme necessário */
-    height: auto;
+.image-small-container img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid #b84cff; /* Borda roxa */
+    border-radius: 8px;
 }
 
-/* Estilo da grade de imagens maiores */
+/* Imagens grandes */
 .image-large-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Três colunas */
-    gap: 20px; /* Espaçamento entre as imagens */
-    padding: 20px; /* Espaçamento interno da grade */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
-.image-large {
-    width: 100%; /* Ocupa o espaço total da coluna */
-    height: auto;
-}
-
-/* Estilo para links (se houver) */
-a {
-    text-decoration: none;
-    color: #4a90e2; /* Azul */
-}
-
-a:hover {
-    text-decoration: underline; /* Efeito ao passar o mouse */
+.image-large-container img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border: 4px solid #b84cff; /* Borda roxa */
+    border-radius: 10px;
 }
