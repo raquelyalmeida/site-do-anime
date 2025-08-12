@@ -28,6 +28,7 @@ h1 {
     gap: 15px;
     padding: 10px;
     margin: bottom 10px;;
+    border-color: #ff00ff;
 }
 
 .image-small-container img {
