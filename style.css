@@ -1,3 +1,4 @@
+```css
 /* Reset básico */
 * {
     margin: 0;
@@ -5,46 +6,52 @@
     box-sizing: border-box;
 }
 
-/* Corpo */
+/* Estilo do corpo */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #2e004f; /* Roxo escuro */
-    color: #ffffff;
+    background-color: #ac0303;
+    color: #000000;
 }
 
-/* Título */
+/* Estilo do título */
 h1 {
     text-align: center;
     font-size: 2.5em;
-    color: #b84cff; /* Roxo vibrante */
+    color: #ed0b3c; /* Azul */
     margin: 20px 0;
-    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
 }
 
-/* Container das imagens */
-.image-row {
+/* Estilo das imagens menores */
+.image-small-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 10px;
+    gap: 10px; /* Espaçamento entre as imagens */
 }
 
-/* Todas as imagens */
-.image-row img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    border: 3px solid transparent;
-    background: linear-gradient(45deg, #ff00ff, #ff6600, #ff00ff, #ff6600);
-    background-size: 400% 400%;
-    animation: flames 3s linear infinite;
+.image-small {
+    width: 100px; /* Ajuste conforme necessário */
+    height: auto;
 }
 
-/* Animação de "chamas" */
-@keyframes flames {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+/* Estilo da grade de imagens maiores */
+.image-large-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Três colunas */
+    gap: 20px; /* Espaçamento entre as imagens */
+    padding: 20px; /* Espaçamento interno da grade */
+}
+
+.image-large {
+    width: 100%; /* Ocupa o espaço total da coluna */
+    height: auto;
+}
+
+/* Estilo para links (se houver) */
+a {
+    text-decoration: none;
+    color: #4a90e2; /* Azul */
+}
+
+a:hover {
+    text-decoration: underline; /* Efeito ao passar o mouse */
 }
